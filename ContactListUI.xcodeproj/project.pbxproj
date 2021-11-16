@@ -15,6 +15,7 @@
 		65085625273FEF1D00B5856B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085624273FEF1D00B5856B /* DataManager.swift */; };
 		65085627273FEF8900B5856B /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085626273FEF8800B5856B /* ContactList.swift */; };
 		65085629273FEFA200B5856B /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085628273FEFA200B5856B /* ContactDetails.swift */; };
+		6514BB3A27439BF900CDA78D /* SectionsContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6514BB3927439BF900CDA78D /* SectionsContactList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		65085624273FEF1D00B5856B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		65085626273FEF8800B5856B /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		65085628273FEFA200B5856B /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		6514BB3927439BF900CDA78D /* SectionsContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsContactList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,9 @@
 		65085613273FD43400B5856B /* ContactListUI */ = {
 			isa = PBXGroup;
 			children = (
-				65085614273FD43400B5856B /* ContactListUIApp.swift */,
-				65085616273FD43400B5856B /* ContentView.swift */,
-				65085622273FEEF000B5856B /* Person.swift */,
-				65085624273FEF1D00B5856B /* DataManager.swift */,
-				65085626273FEF8800B5856B /* ContactList.swift */,
-				65085628273FEFA200B5856B /* ContactDetails.swift */,
+				6514BB3C27439DE600CDA78D /* Views */,
+				6514BB3B27439D8500CDA78D /* Models */,
+				6514BB3D27439DF100CDA78D /* Managers */,
 				65085618273FD43900B5856B /* Assets.xcassets */,
 				6508561A273FD43900B5856B /* Preview Content */,
 			);
@@ -77,6 +76,34 @@
 				6508561B273FD43900B5856B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6514BB3B27439D8500CDA78D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65085622273FEEF000B5856B /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6514BB3C27439DE600CDA78D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65085614273FD43400B5856B /* ContactListUIApp.swift */,
+				65085616273FD43400B5856B /* ContentView.swift */,
+				65085626273FEF8800B5856B /* ContactList.swift */,
+				65085628273FEFA200B5856B /* ContactDetails.swift */,
+				6514BB3927439BF900CDA78D /* SectionsContactList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6514BB3D27439DF100CDA78D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				65085624273FEF1D00B5856B /* DataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +179,7 @@
 				65085623273FEEF000B5856B /* Person.swift in Sources */,
 				65085629273FEFA200B5856B /* ContactDetails.swift in Sources */,
 				65085625273FEF1D00B5856B /* DataManager.swift in Sources */,
+				6514BB3A27439BF900CDA78D /* SectionsContactList.swift in Sources */,
 				65085617273FD43400B5856B /* ContentView.swift in Sources */,
 				65085615273FD43400B5856B /* ContactListUIApp.swift in Sources */,
 				65085627273FEF8900B5856B /* ContactList.swift in Sources */,

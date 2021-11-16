@@ -5,8 +5,9 @@
 //  Created by Aiza on 13.11.2021.
 //
 
-struct Person {
+struct Person: Identifiable {
     
+    let id: Int
     let name: String
     let surname: String
     let email: String
@@ -15,9 +16,7 @@ struct Person {
     var fullName: String {
         "\(name) \(surname)"
     }
-}
-
-extension Person {
+    
     static func getContactList() -> [Person] {
         
         var persons: [Person] = []
@@ -27,10 +26,9 @@ extension Person {
         let emails = DataManager.shared.emails.shuffled()
         let phones = DataManager.shared.phoneNumbers.shuffled()
         
-        let iterationCount = min(names.count, surnames.count, emails.count, phones.count)
-        
-        for index in 0..<iterationCount {
+        for index in 0..<names.count {
             let person = Person(
+                id: index + 1,
                 name: names[index],
                 surname: surnames[index],
                 email: emails[index],
