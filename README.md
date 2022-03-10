@@ -2,4 +2,3 @@
 # SwiftUI  
 - Data manager
 - Models
-- 
