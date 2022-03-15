@@ -4,4 +4,3 @@
 
 - Data manager
 - Models
-
